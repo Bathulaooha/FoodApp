@@ -1,0 +1,64 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Editor/recipeuss.uss?fileID=7433441132597879392&amp;guid=8e4751ded85f3b842be5cb2776035c2a&amp;type=3#recipeuss" />
+    <ui:VisualElement class="mainscreen recipemainscreen" style="width: 358px;">
+        <ui:Label text="Delivering to" display-tooltip-when-elided="true" class="delivery" />
+        <ui:Label text="Current location" display-tooltip-when-elided="true" class="location" />
+        <ui:DropdownField index="-1" choices="kurnool" class="locationdropdown" style="font-size: 12px; top: 35px; left: 192px; width: 54px;" />
+        <ui:TextField picking-mode="Ignore" class="searchbar" />
+        <ui:Button display-tooltip-when-elided="true" class="filters" />
+        <ui:ScrollView class="topscroll" style="height: 110px;">
+            <ui:VisualElement class="offers">
+                <ui:Label text="Offers" display-tooltip-when-elided="true" class="offerslabel" />
+            </ui:VisualElement>
+            <ui:VisualElement class="burger">
+                <ui:Label text="Burgers" display-tooltip-when-elided="true" class="burgerlabel recipeburgerlabel" />
+            </ui:VisualElement>
+            <ui:VisualElement class="asian">
+                <ui:Label text="Asian" display-tooltip-when-elided="true" class="asianlabel" />
+            </ui:VisualElement>
+            <ui:VisualElement class="pizza">
+                <ui:Label text="Pizza" display-tooltip-when-elided="true" class="pizzalabel" />
+            </ui:VisualElement>
+        </ui:ScrollView>
+        <ui:VisualElement class="navbar" style="top: 510px; left: 9px;">
+            <ui:Button display-tooltip-when-elided="true" class="button button1">
+                <ui:VisualElement class="restuarantlabel">
+                    <ui:Label text="Restuarants" display-tooltip-when-elided="true" class="restuarant" />
+                </ui:VisualElement>
+            </ui:Button>
+            <ui:Button display-tooltip-when-elided="true" class="button2">
+                <ui:VisualElement class="offerlabel recipeoffers">
+                    <ui:Label text="offers" display-tooltip-when-elided="true" class="offer" />
+                </ui:VisualElement>
+            </ui:Button>
+            <ui:Button display-tooltip-when-elided="true" class="button3 accountlabel account">
+                <ui:VisualElement style="position: absolute; height: 35px; width: 38px; background-color: rgb(115, 105, 105); top: 13px; left: 20px; background-image: url(&apos;project://database/Assets/assets/account.png?fileID=2800000&amp;guid=1b7ffa4690dc80046ba55f0250e38092&amp;type=3#account&apos;);">
+                    <ui:Label text="Account" display-tooltip-when-elided="true" style="position: absolute; top: 36px; left: -13px; color: rgb(19, 18, 18); width: 67px;" />
+                </ui:VisualElement>
+            </ui:Button>
+        </ui:VisualElement>
+        <ui:ScrollView class="midscrollview" style="height: 290px; top: 227px; left: 7px; width: 340px;">
+            <ui:VisualElement class="cafe1button cafe1ve" style="width: 325px;">
+                <ui:Label text="Hollywood starz cafe" display-tooltip-when-elided="true" class="cafe1label" />
+                <ui:Label text="4.9(124 ratings)" display-tooltip-when-elided="true" class="cafe1rating" />
+                <ui:Label text="cafe.Western Food-$$" display-tooltip-when-elided="true" class="cafe1food" />
+            </ui:VisualElement>
+            <ui:VisualElement class="cafe2ve">
+                <ui:Label text="Hollywood starz cafe" display-tooltip-when-elided="true" class="cafe1label cafe2label" />
+                <ui:Label text="4.9(124 ratings)" display-tooltip-when-elided="true" class="cafe1rating cafe2rating" />
+                <ui:Label text="cafe.Western Food-$$" display-tooltip-when-elided="true" class="cafe1food cafe2food" />
+                <ui:Button display-tooltip-when-elided="true" class="cafe2button icecreambutton">
+                    <ui:Label text="20-30 min" display-tooltip-when-elided="true" class="cafe1time cafe2time" />
+                </ui:Button>
+            </ui:VisualElement>
+            <ui:VisualElement class="cafe3ve">
+                <ui:Label text="Hollywood starz cafe" display-tooltip-when-elided="true" class="cafe1label cafe3label" />
+                <ui:Label text="4.9(124 ratings)" display-tooltip-when-elided="true" class="cafe1rating cafe3rating" />
+                <ui:Label text="cafe.Western Food-$$" display-tooltip-when-elided="true" class="cafe1food cafe3food" />
+                <ui:Button display-tooltip-when-elided="true" class="cafe3button">
+                    <ui:Label text="20-30 min" display-tooltip-when-elided="true" class="cafe1time cafe3time" />
+                </ui:Button>
+            </ui:VisualElement>
+        </ui:ScrollView>
+    </ui:VisualElement>
+</ui:UXML>
